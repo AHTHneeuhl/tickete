@@ -5,9 +5,9 @@ type TProps = {
 
 const AskedQuestion: React.FC<TProps> = ({ question, answer }) => {
   return (
-    <div>
-      <p>{question}</p>
-      <p>{answer}</p>
+    <div className="rounded-xl border p-4">
+      <p className="text-neutral-900 font-semibold">{question}</p>
+      <p className="text-sm text-neutral-700">{answer}</p>
     </div>
   );
 };

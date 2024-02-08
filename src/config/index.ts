@@ -1,1 +1,1 @@
-export * from "./fAQs";
+export { default as fAQs } from "./fAQs";
