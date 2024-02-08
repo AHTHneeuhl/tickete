@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type TProps = {
   title: string;
   pictures: string[];
@@ -19,7 +21,8 @@ const PlaceCard: React.FC<TProps> = ({
   totalGuests,
 }) => {
   return (
-    <div className="rounded">
+    <div className="rounded-2xl border p-4">
+      <Image src="" alt="" />
       <h3 className="font-semibold">{title}</h3>
       <h4 className="text-sm font-semibold">{ticketType}</h4>
       <h4 className="text-sm font-semibold">{date}</h4>
