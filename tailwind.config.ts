@@ -22,6 +22,7 @@ const config: Config = {
       "surface-default": "#FFFFFF",
       "indigo-900": "#3A5CCC",
       "grey-05": "#FCFCFD",
+      "divider-default": "#DDDDE3",
     },
     fontFamily: {
       serif: ["Roboto Serif", "serif"],
