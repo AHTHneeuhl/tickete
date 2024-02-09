@@ -19,13 +19,14 @@ const ConfirmAndPay: React.FC = () => {
       <div className="col-span-1">
         <PlaceCard
           title="Amsterdam open boat canal cruise - Live Guiye - from Anne Frank Housef"
-          ticketType="Adults"
-          date="13th, December, 2024"
-          time="10:00 AM"
-          totalGuests={2}
+          ticketType="<ticket type - variant>"
+          date="<day>, <month> <date>"
+          time="<time>"
+          duration="<duration>"
+          totalGuests={5}
           rating={4.9}
           ratedBy={45000}
-          category="Cruises"
+          category="<category>"
           pictures={[""]}
         />
       </div>

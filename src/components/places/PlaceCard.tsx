@@ -1,9 +1,14 @@
+import { formatNumber } from "@/utils/formatNumber";
 import Image from "next/image";
+import Payable from "./Payable";
+import PaymentSummary from "./PaymentSummary";
+import BestSeller from "./BestSeller";
 
 type TProps = {
   title: string;
   pictures: string[];
   ticketType: string;
+  duration: string;
   date: string;
   time: string;
   totalGuests: number;
@@ -15,16 +20,32 @@ type TProps = {
 const PlaceCard: React.FC<TProps> = ({
   title,
   pictures,
+  rating,
   ticketType,
   date,
   time,
   totalGuests,
+  ratedBy,
+  category,
 }) => {
   return (
-    <div className="rounded-2xl border border-border-grey-default p-4">
-      <Image src="/place.png" alt="" height={198} width={352} />
-      <div className="flex flex-col gap-6">
+    <div className="rounded-2xl border border-border-grey-default p-4 flex flex-col gap-4">
+      <div className="relative">
+        <BestSeller />
+        <Image src="/place.png" alt="" height={198} width={352} />
+      </div>
+      <div className="flex flex-col gap-[2px]">
+        <div className="flex flex-row gap-1">
+          <Image src="/rating-star.svg" alt="" height={14} width={14} />
+          <p className="text-grey-primary text-sm font-semibold">{rating}</p>
+          <p className="text-grey-secondary text-sm font-normal">
+            {formatNumber(ratedBy)}
+          </p>
+          <p className="text-grey-secondary text-sm font-normal">{category}</p>
+        </div>
         <h3 className="font-semibold text-base">{title}</h3>
+      </div>
+      <div className="flex flex-col gap-6 border-dashed border-b pb-4 border-border-grey-default">
         <div className="flex flex-col gap-2">
           <div className="flex flex-row items-center gap-2">
             <Image src="/ticket.svg" alt="" height={20} width={20} />
@@ -44,28 +65,8 @@ const PlaceCard: React.FC<TProps> = ({
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5">
-        <div className="flex flex-row items-center justify-between">
-          <h4 className="text-lg font-semibold text-grey-primary">
-            Total payable
-          </h4>
-          <h4 className="text-lg font-semibold text-grey-primary">$XXX</h4>
-        </div>
-        <p className="text-xs font-semibold text-grey-secondary">
-          You will be charged in AED
-        </p>
-        <p className="text-xs font-normal text-grey-secondary">
-          By clicking &ldquo;confirm & pay&rdquo;, you agree{" "}
-          <span className="text-indigo-900">
-            to Tickete&apos;s general terms and conditions
-          </span>{" "}
-          and <span className="text-indigo-900">cancellation policy</span>.
-        </p>
-        <button className="bg-brand-default rounded-2xl inline-flex justify-center items-center gap-2 py-4 px-5 text-grey-10 text-lg font-semibold">
-          <Image src="/lock.svg" alt="" height={20} width={20} />
-          Confirm & Pay
-        </button>
-      </div>
+      <PaymentSummary />
+      <Payable />
     </div>
   );
 };
