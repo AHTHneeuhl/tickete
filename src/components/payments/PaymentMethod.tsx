@@ -8,30 +8,42 @@ const PaymentMethod: React.FC = () => {
         <h4 className="text-grey-primary text-base font-semibold">
           Credit & debit card
         </h4>
+        <Image
+          src="/radio.svg"
+          alt=""
+          height={24}
+          width={24}
+          className="ml-auto"
+        />
+      </div>
+      <div className="flex flex-row gap-2">
+        <Image src="/visa.svg" alt="" width={35} height={20} />
+        <Image src="/mastercard.svg" alt="" width={35} height={20} />
+        <Image src="/diners-club.svg" alt="" width={35} height={20} />
       </div>
       <form className="grid grid-cols-2 gap-7">
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
-          placeholder="Name of card"
+          placeholder="Name of card *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
-          placeholder="Card number"
+          placeholder="Card number *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
-          placeholder="Expiry date"
+          placeholder="Expiry date *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
-          placeholder="<CVV/CVC>"
+          placeholder="<CVV/CVC> *"
           required
         />
       </form>
