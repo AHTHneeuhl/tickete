@@ -6,9 +6,11 @@ import UserDetails from "./UserDetails";
 
 const ConfirmAndPay: React.FC = () => {
   return (
-    <div className="px-32 grid grid-cols-3">
-      <div className="col-span-2">
-        <h1 className="font-bold text-5xl text-neutral-900">Confirm & Pay</h1>
+    <div className="px-32 grid grid-cols-3 gap-6 mt-20">
+      <div className="col-span-2 flex flex-col gap-8">
+        <h1 className="font-bold text-5xl font-serif text-neutral-900">
+          Confirm & Pay
+        </h1>
         <FreeCancel cancelTill="13th, December, 2024" />
         <UserDetails />
         <AdditionalInfo />
