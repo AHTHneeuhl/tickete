@@ -8,33 +8,33 @@ const UserDetails: React.FC = () => {
         We&apos;ll be sending your tickets to the details below. Booking for a
         friend? Add their details.
       </p>
-      <form>
+      <form className="grid grid-cols-2 gap-7">
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-2"
           type="text"
           placeholder="Full name"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="text"
           placeholder="Country code"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="number"
           placeholder="Phone number"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="email"
           placeholder="Email"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="email"
           placeholder="Confirm email"
           required

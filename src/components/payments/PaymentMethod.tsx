@@ -2,34 +2,40 @@ import Image from "next/image";
 
 const PaymentMethod: React.FC = () => {
   return (
-    <div className="border border-border-grey-selected rounded-xl p-4">
-      <h4 className="text-neutral-900">Credit & debit card</h4>
-      <form>
+    <div className="border border-border-grey-selected rounded-xl pt-7 pb-8 px-6 flex flex-col gap-8">
+      <div className="flex flex-row gap-3 items-center">
+        <Image src="/credit-card.svg" alt="" height={24} width={35} />
+        <h4 className="text-grey-primary text-base font-semibold">
+          Credit & debit card
+        </h4>
+      </div>
+      <form className="grid grid-cols-2 gap-7">
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="text"
           placeholder="Name of card"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="text"
           placeholder="Card number"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="text"
           placeholder="Expiry date"
           required
         />
         <input
-          className="rounded-xl border border-border-grey-default p-3"
+          className="rounded-2xl border border-border-grey-default p-4 col-span-1"
           type="text"
           placeholder="<CVV/CVC>"
           required
         />
       </form>
+      <hr className="text-divider-default" />
       <div className="flex flex-col gap-5 items-start">
         <div className="flex flex-row gap-2 items-center justify-between">
           <h4 className="text-lg font-semibold text-grey-primary">
