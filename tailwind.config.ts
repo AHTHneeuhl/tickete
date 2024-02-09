@@ -16,6 +16,7 @@ const config: Config = {
       "bg-grey-default": "#F9F9FB",
       "border-grey": "#D3D4DB",
       "border-grey-default": "#B9BBC6",
+      "border-grey-selected": "#1C2024",
       "grey-100": "#F9F9FB",
       "green-900": "#299764",
       "green-200": "#E9F9EE",

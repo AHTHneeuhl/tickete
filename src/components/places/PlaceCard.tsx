@@ -61,7 +61,8 @@ const PlaceCard: React.FC<TProps> = ({
           </span>{" "}
           and <span className="text-indigo-900">cancellation policy</span>.
         </p>
-        <button className="bg-brand-default rounded-2xl py-4 px-5 text-grey-10 text-lg font-semibold">
+        <button className="bg-brand-default rounded-2xl inline-flex justify-center items-center gap-2 py-4 px-5 text-grey-10 text-lg font-semibold">
+          <Image src="/lock.svg" alt="" height={20} width={20} />
           Confirm & Pay
         </button>
       </div>

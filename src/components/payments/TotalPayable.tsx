@@ -1,7 +1,12 @@
 const TotalPayable: React.FC = () => {
   return (
-    <div>
-      <h3>Total Payable: $XXX</h3>
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-row items-center justify-between">
+        <h4 className="text-lg font-semibold text-grey-primary">
+          Total payable
+        </h4>
+        <h4 className="text-lg font-semibold text-grey-primary">$XXX</h4>
+      </div>
       <div>
         <h4>You will be charged in AED</h4>
         <p>
