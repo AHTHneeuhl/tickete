@@ -29,10 +29,15 @@ const PaymentMethod: React.FC = () => {
         />
       </form>
       <h3>Total payable: $XXX</h3>
-      <p>You will be charged in AED</p>
-      <p>
-        By clicking &ldquo;confirm & pay&rdquo;, you agree to Tickete&apos;s
-        general terms and conditions and cancellation policy.
+      <p className="text-xs font-semibold text-grey-secondary">
+        You will be charged in AED
+      </p>
+      <p className="text-xs font-normal text-grey-secondary">
+        By clicking &ldquo;confirm & pay&rdquo;, you agree{" "}
+        <span className="text-indigo-900">
+          to Tickete&apos;s general terms and conditions
+        </span>{" "}
+        and <span className="text-indigo-900">cancellation policy</span>.
       </p>
     </div>
   );

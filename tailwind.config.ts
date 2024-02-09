@@ -20,6 +20,7 @@ const config: Config = {
       "green-900": "#299764",
       "green-200": "#E9F9EE",
       "surface-default": "#FFFFFF",
+      "indigo-900": "#3A5CCC",
     },
     fontFamily: {
       serif: ["Roboto Serif", "serif"],
