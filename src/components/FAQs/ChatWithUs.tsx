@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ChatWithUS: React.FC = () => {
+const ChatWithUS: React.FC = ({}) => {
   return (
     <div className="bg-bg-grey-default p-6 rounded-2xl flex flex-row justify-between items-start">
       <div className="flex flex-col gap-4">

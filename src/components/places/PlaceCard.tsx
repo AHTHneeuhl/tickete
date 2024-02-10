@@ -1,4 +1,4 @@
-import { formatNumber } from "@/utils/formatNumber";
+import { formatNumber } from "@/lib/utils";
 import Image from "next/image";
 import Payable from "./Payable";
 import PaymentSummary from "./PaymentSummary";
