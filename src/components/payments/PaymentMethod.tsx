@@ -21,7 +21,7 @@ const PaymentMethod: React.FC = () => {
         <Image src="/mastercard.svg" alt="" width={35} height={20} />
         <Image src="/diners-club.svg" alt="" width={35} height={20} />
       </div>
-      <form className="grid grid-cols-2 gap-7">
+      <form className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-7">
         <input
           className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"

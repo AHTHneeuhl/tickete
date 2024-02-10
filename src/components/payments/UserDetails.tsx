@@ -8,7 +8,7 @@ const UserDetails: React.FC = () => {
         We&apos;ll be sending your tickets to the details below. Booking for a
         friend? Add their details.
       </p>
-      <form className="grid grid-cols-2 gap-7">
+      <form className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-7">
         <input
           className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 sm:col-span-2 focus:outline-none"
           type="text"
