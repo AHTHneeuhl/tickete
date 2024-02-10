@@ -23,25 +23,25 @@ const PaymentMethod: React.FC = () => {
       </div>
       <form className="grid grid-cols-2 gap-7">
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="Name of card *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="Card number *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="Expiry date *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="<CVV/CVC> *"
           required

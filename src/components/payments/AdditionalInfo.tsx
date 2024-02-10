@@ -11,19 +11,19 @@ const AdditionalInfo: React.FC = () => {
       </div>
       <form className="grid grid-cols-2 gap-7">
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="Input label *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-1 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 focus:outline-none"
           type="text"
           placeholder="Select *"
           required
         />
         <input
-          className="rounded-2xl border border-border-grey-default p-4 col-span-2 focus:outline-none"
+          className="rounded-xl sm:rounded-2xl text-sm sm:text-base border border-border-grey-default p-4 col-span-1 sm:col-span-2 focus:outline-none"
           type="text"
           placeholder="Multiselect *"
           required

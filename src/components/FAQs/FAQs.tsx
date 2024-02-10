@@ -1,11 +1,11 @@
-import ChatWithUS from "./ChatWithUs";
+import FAQCTA from "./FAQCTA";
 import FAQList from "./FAQList";
 
 const FAQs: React.FC = () => {
   return (
-    <div className="px-32 py-20">
+    <div className="px-4 sm:px-32 py-20">
       <div className="grid grid-cols-12 gap-8">
-        <ChatWithUS />
+        <FAQCTA />
         <FAQList />
       </div>
       <hr className="text-divider-default mt-6" />
