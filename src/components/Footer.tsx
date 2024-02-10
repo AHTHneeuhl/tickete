@@ -12,9 +12,31 @@ const Footer: React.FC = () => {
           className="h-8 w-32 sm:h-12 sm:w-48"
         />
       </div>
-      <div className="flex flex-row items-center justify-start py-4 bg-brand-default text-grey-secondary text-xs sm:text-sm font-semibold">
-        Made with ❤️ - Privacy Policy - Terms of Usage - Cancellation Policy -
-        Sitemap
+      <div className="hidden sm:flex flex-col gap-4 py-4 bg-brand-default text-grey-secondary text-xs sm:text-sm font-semibold">
+        <ul className="flex flex-row gap-6 list-disc">
+          <li className="text-xs sm:text-sm font-semibold first:list-none">
+            Made with ❤️
+          </li>
+          <li className="text-xs sm:text-sm font-semibold">Privacy Policy</li>
+          <li className="text-xs sm:text-sm font-semibold">Terms of Usage</li>
+          <li className="text-xs sm:text-sm font-semibold">
+            Cancellation Policy
+          </li>
+          <li className="text-xs sm:text-sm font-semibold">Sitemap</li>
+        </ul>
+      </div>
+      <div className="flex sm:hidden flex-col gap-4 py-4 bg-brand-default text-grey-secondary text-xs sm:text-sm font-semibold">
+        <ul className="flex flex-row gap-6 list-disc">
+          <li className="text-xs sm:text-sm font-semibold first:list-none">
+            Privacy Policy
+          </li>
+          <li className="text-xs sm:text-sm font-semibold">Terms of Usage</li>
+          <li className="text-xs sm:text-sm font-semibold">
+            Cancellation Policy
+          </li>
+          <li className="text-xs sm:text-sm font-semibold">Sitemap</li>
+        </ul>
+        <p className="text-xs sm:text-sm font-semibold">Made with ❤️</p>
       </div>
     </div>
   );

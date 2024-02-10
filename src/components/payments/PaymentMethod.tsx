@@ -1,4 +1,5 @@
 import Image from "next/image";
+import YouSaved from "./YouSaved";
 
 const PaymentMethod: React.FC = () => {
   return (
@@ -49,6 +50,7 @@ const PaymentMethod: React.FC = () => {
       </form>
       <hr className="text-divider-default" />
       <div className="flex flex-col gap-5 items-start">
+        <YouSaved price="<price>" />
         <div className="flex flex-row gap-2 items-center justify-between">
           <h4 className="text-lg font-semibold text-grey-primary">
             Total payable:
