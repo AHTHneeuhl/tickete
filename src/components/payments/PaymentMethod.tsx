@@ -51,7 +51,7 @@ const PaymentMethod: React.FC = () => {
       <hr className="text-divider-default" />
       <div className="flex flex-col gap-5 items-start">
         <YouSaved price="<price>" />
-        <div className="flex flex-row gap-2 items-center justify-between">
+        <div className="flex flex-row items-center gap-2">
           <h4 className="text-lg font-semibold text-grey-primary">
             Total payable:
           </h4>
