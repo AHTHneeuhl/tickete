@@ -17,6 +17,8 @@ const config: Config = {
       "border-grey": "#D3D4DB",
       "border-grey-default": "#B9BBC6",
       "border-grey-selected": "#1C2024",
+      "grey-default-subtle": "#D3D4DB",
+      "grey-disabled": "#8B8D98",
       "grey-100": "#F9F9FB",
       "green-900": "#299764",
       "green-200": "#E9F9EE",

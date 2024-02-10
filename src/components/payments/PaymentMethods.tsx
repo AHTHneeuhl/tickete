@@ -1,3 +1,4 @@
+import ComingSoon from "./ComingSoon";
 import PaymentMethod from "./PaymentMethod";
 
 const PaymentMethods: React.FC = () => {
@@ -9,7 +10,11 @@ const PaymentMethods: React.FC = () => {
       <p className="text-grey-secondary text-base font-normal pb-4">
         Payments with Tickete are secure and encrypted.
       </p>
-      <PaymentMethod />
+      <div className="flex flex-col gap-6">
+        <PaymentMethod />
+        <ComingSoon method="ApplePay" imageUrl="/apple-pay.svg" />
+        <ComingSoon method="GooglePay" imageUrl="/google-pay.svg" />
+      </div>
     </div>
   );
 };
