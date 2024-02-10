@@ -3,6 +3,7 @@ import Image from "next/image";
 import Payable from "./Payable";
 import PaymentSummary from "./PaymentSummary";
 import BestSeller from "./BestSeller";
+import Slides from "./Slides";
 
 type TProps = {
   title: string;
@@ -33,6 +34,7 @@ const PlaceCard: React.FC<TProps> = ({
       <div className="relative">
         <BestSeller />
         <Image src="/place.png" alt="" height={198} width={352} />
+        <Slides />
       </div>
       <div className="flex flex-col gap-[2px]">
         <div className="flex flex-row gap-1">
